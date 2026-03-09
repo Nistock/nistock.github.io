@@ -1,0 +1,187 @@
+:root {
+    --swagger-green: #49cc90;
+    --swagger-blue: #61affe;
+    --swagger-bg: #fafafa;
+    --swagger-border: #e8e8e8;
+}
+
+body {
+    font-family: sans-serif;
+    color: #3b4151;
+    margin: 0;
+    background-color: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.topbar {
+    background-color: #1b1b1b;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.info-header {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.version {
+    font-size: 0.8rem;
+    background: #7d8492;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.base-url {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.tag-title {
+    border-bottom: 1px solid rgba(59,65,81,.3);
+    padding: 10px 0;
+    margin: 40px 0 20px;
+}
+
+.tag-title small {
+    font-weight: normal;
+    color: #7d8492;
+    margin-left: 10px;
+}
+
+/* Opblock (The swagger route blocks) */
+.opblock {
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: rgba(73,204,144,.1);
+    border-color: var(--swagger-green);
+    overflow: hidden;
+}
+
+.opblock-summary {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.opblock-summary-method {
+    background: var(--swagger-green);
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.opblock-summary-path {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 15px;
+}
+
+.opblock-summary-description {
+    color: #3b4151;
+    font-size: 0.9rem;
+}
+
+.opblock-body {
+    display: none; /* Hidden by default */
+    padding: 20px;
+    background: #fff;
+    border-top: 1px solid var(--swagger-green);
+}
+
+.opblock-execute {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.btn-execute {
+    background-color: var(--swagger-blue);
+    color: #fff;
+    border: none;
+    padding: 8px 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+}
+
+.btn-execute:hover {
+    opacity: 0.8;
+}
+
+.opblock.is-open .opblock-body {
+    display: block;
+}
+
+.responses-wrapper {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.response-header {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.response-content {
+    padding: 15px;
+    margin: 0;
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+.project-item img {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #7d8492;
+}

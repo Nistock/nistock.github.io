@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Portfolio API</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="https://static1.smartbear.co/swagger/media/assets/images/swagger_fav.png">
+</head>
+<body>
+    <header class="topbar">
+        <div class="wrapper">
+            <a href="../index.html" class="logo">
+                <img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" alt="Swagger Logo">
+                <span>PORTFOLIO API</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <div class="info-header">
+            <h1 class="title">GET <span class="opblock-summary-path" style="font-size: 2.5rem;">/cv</span></h1>
+            <p class="description">Consultation du Curriculum Vitae complet.</p>
+            <a href="../index.html" style="color: var(--swagger-blue); text-decoration: none;">&larr; Retour à l'index</a>
+        </div>
+
+        <section class="responses-wrapper">
+            <div class="response-header">Parcours Professionnel & Scolaire</div>
+            <div class="response-content" style="font-family: sans-serif;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h2>Mon CV</h2>
+                    <a href="../assets/mon_cv.pdf" download class="btn-execute" style="background-color: var(--swagger-green);">TÉLÉCHARGER LE PDF</a>
+                </div>
+
+                <h3>Expériences Professionnelles</h3>
+                <ul>
+                    <li>
+                        <strong>Stage Développeur Fullstack - [Entreprise]</strong> (Avril - Juin 2025)
+                        <p>Optimisation du système de gestion interne, développement de nouvelles fonctionnalités en Vue.js et Node.js.</p>
+                    </li>
+                    <li>
+                        <strong>Projet Étudiant : Application Mobile</strong> (Février 2025)
+                        <p>Conception d'une application de suivi de nutrition en équipe de 4 personnes (React Native, Firebase).</p>
+                    </li>
+                </ul>
+
+                <h3>Formation</h3>
+                <ul>
+                    <li><strong>BUT Informatique</strong> - IUT de [Ville] (2023 - 2026)</li>
+                    <li><strong>Option Sciences de l'Ingénieur</strong> - Lycée [Nom] (2020 - 2023)</li>
+                </ul>
+
+                <h3>Langues</h3>
+                <ul>
+                    <li>Français : Langue maternelle</li>
+                    <li>Anglais : Niveau B2 (TOEIC : 850)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrapper">
+        <p>&copy; 2026 [Votre Nom]. Généré par Portfolio API.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio API</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/png" href="https://static1.smartbear.co/swagger/media/assets/images/swagger_fav.png">
+    <style>
+        .project-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 768px) {
+            .project-detail-grid { grid-template-columns: 1fr; }
+        }
+        .tech-tag {
+            display: inline-block;
+            background: #e8e8e8;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <div class="wrapper">
+            <a href="../index.html" class="logo">
+                <img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" alt="Swagger Logo">
+                <span>PORTFOLIO API</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <div class="info-header">
+            <h1 class="title">GET <span class="opblock-summary-path" style="font-size: 2.5rem;">/projects</span></h1>
+            <p class="description">Liste exhaustive et détaillée des projets réalisés.</p>
+            <a href="../index.html" style="color: var(--swagger-blue); text-decoration: none;">&larr; Retour à l'index</a>
+        </div>
+
+        <section class="responses-wrapper">
+            <div class="response-header">Catalogue des Projets</div>
+            <div class="response-content" style="font-family: sans-serif;">
+                
+                <div class="project-detail-grid">
+                    <div>
+                        <img src="https://via.placeholder.com/600x300?text=Projet+1+Full+View" alt="Aperçu Projet 1" style="width:100%; border-radius:4px; border: 1px solid #ddd;">
+                    </div>
+                    <div>
+                        <h2>Projet 1 : Gestionnaire de Stock</h2>
+                        <p>Une application de bureau complète permettant de gérer l'inventaire, les ventes et les fournisseurs d'une petite boutique.</p>
+                        <p><strong>Défis techniques :</strong> Mise en place d'une base de données locale robuste et d'une interface utilisateur intuitive en JavaFX.</p>
+                        <p>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JavaFX</span>
+                            <span class="tech-tag">SQLite</span>
+                        </p>
+                        <div style="margin-top: 20px;">
+                            <a href="https://github.com/votre-username/projet1" target="_blank" class="btn-execute" style="background-color: #333; margin-right: 10px;">GITHUB</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+                <div class="project-detail-grid">
+                    <div>
+                        <img src="https://via.placeholder.com/600x300?text=Projet+2+Full+View" alt="Aperçu Projet 2" style="width:100%; border-radius:4px; border: 1px solid #ddd;">
+                    </div>
+                    <div>
+                        <h2>Projet 2 : Portfolio Web Responsive</h2>
+                        <p>Création de ce site de portfolio en explorant différents styles (Swagger et Grimoire) pour mettre en valeur mes compétences.</p>
+                        <p><strong>Défis techniques :</strong> Travail approfondi sur le CSS pour imiter des interfaces existantes et assurer une compatibilité mobile parfaite.</p>
+                        <p>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </p>
+                        <div style="margin-top: 20px;">
+                            <a href="#" class="btn-execute" style="background-color: var(--swagger-green);">DEMO LIVE</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrapper">
+        <p>&copy; 2026 [Votre Nom]. Généré par Portfolio API.</p>
+    </footer>
+</body>
+</html>

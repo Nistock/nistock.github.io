@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio API - Swagger Style</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="https://static1.smartbear.co/swagger/media/assets/images/swagger_fav.png">
+</head>
+<body>
+    <header class="topbar">
+        <div class="wrapper">
+            <a href="#" class="logo">
+                <img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" alt="Swagger Logo">
+                <span>PORTFOLIO API</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="info-section wrapper">
+        <div class="info-header">
+            <h1 class="title">Portfolio de Nino PERDRIX <span class="version">1.0.0</span></h1>
+            <pre class="base-url">[ Base URL: github.io/[votre-username]/portfolio ]</pre>
+            <div class="description">
+                <p>Ceci est l'API de mon parcours professionnel et de mes compétences. Explorez les différentes "routes" pour en savoir plus sur moi.</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="wrapper">
+        <section class="tag-section">
+            <h3 class="tag-title">Mon Profil <small>Présentation et CV</small></h3>
+            
+            <!-- About Me -->
+            <div class="opblock opblock-get" id="about-op">
+                <div class="opblock-summary" onclick="toggleOp('about-op')">
+                    <span class="opblock-summary-method">GET</span>
+                    <span class="opblock-summary-path">/about-me</span>
+                    <span class="opblock-summary-description">Récupérer ma présentation personnelle</span>
+                </div>
+                <div class="opblock-body">
+                    <div class="opblock-execute">
+                        <a href="pages/about-me.html" class="btn-execute">EXECUTE</a>
+                    </div>
+                    <div class="responses-wrapper">
+                        <div class="response-header">Response Body</div>
+                        <pre class="response-content">
+{
+  "name": "[Votre Nom]",
+  "bio": "Étudiant passionné par [Domaine], actuellement en BUT Informatique.",
+  "location": "Ville, France",
+  "interests": ["Développement Web", "IA", "Design"]
+}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CV -->
+            <div class="opblock opblock-get" id="cv-op">
+                <div class="opblock-summary" onclick="toggleOp('cv-op')">
+                    <span class="opblock-summary-method">GET</span>
+                    <span class="opblock-summary-path">/cv</span>
+                    <span class="opblock-summary-description">Consulter mon Curriculum Vitae</span>
+                </div>
+                <div class="opblock-body">
+                    <div class="opblock-execute">
+                        <a href="pages/cv.html" class="btn-execute">EXECUTE</a>
+                    </div>
+                    <div class="responses-wrapper">
+                        <div class="response-header">Response (PDF Link)</div>
+                        <div class="response-content">
+                            <p>Accéder au fichier complet : <a href="assets/mon_cv.pdf" target="_blank">curriculum_vitae.pdf</a></p>
+                            <h4>Expériences clés :</h4>
+                            <ul>
+                                <li><strong>Stage [Entreprise]</strong> : Développement de [Projet] (2025)</li>
+                                <li><strong>BUT Informatique</strong> : IUT de [Ville] (En cours)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section">
+            <h3 class="tag-title">Expertise <small>Compétences techniques</small></h3>
+            
+            <!-- Skills -->
+            <div class="opblock opblock-get" id="skills-op">
+                <div class="opblock-summary" onclick="toggleOp('skills-op')">
+                    <span class="opblock-summary-method">GET</span>
+                    <span class="opblock-summary-path">/skills</span>
+                    <span class="opblock-summary-description">Lister mes compétences techniques</span>
+                </div>
+                <div class="opblock-body">
+                    <div class="opblock-execute">
+                        <a href="pages/skills.html" class="btn-execute">EXECUTE</a>
+                    </div>
+                    <div class="responses-wrapper">
+                        <div class="response-header">Response Body</div>
+                        <pre class="response-content">
+[
+  { "category": "Frontend", "items": ["HTML/CSS", "JavaScript", "Vue.js"] },
+  { "category": "Backend", "items": ["Java", "Python", "SQL"] },
+  { "category": "Tools", "items": ["Git", "Docker", "VS Code"] }
+]
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tag-section">
+            <h3 class="tag-title">Réalisations <small>Mes Projets</small></h3>
+            
+            <!-- Projects -->
+            <div class="opblock opblock-get" id="projects-op">
+                <div class="opblock-summary" onclick="toggleOp('projects-op')">
+                    <span class="opblock-summary-method">GET</span>
+                    <span class="opblock-summary-path">/projects</span>
+                    <span class="opblock-summary-description">Récupérer la liste des projets réalisés</span>
+                </div>
+                <div class="opblock-body">
+                    <div class="opblock-execute">
+                        <a href="pages/projects.html" class="btn-execute">EXECUTE</a>
+                    </div>
+                    <div class="responses-wrapper">
+                        <div class="response-header">Response Body</div>
+                        <div class="response-content">
+                            <div class="project-item">
+                                <h5>Projet 1 : Gestionnaire de Stock</h5>
+                                <p>Application JavaFX pour gérer l'inventaire d'une petite boutique.</p>
+                                <ul>
+                                    <li><strong>Tech:</strong> Java, SQLite</li>
+                                    <li><strong>Lien:</strong> <a href="https://github.com/votre-username/projet1">GitHub Repo</a></li>
+                                </ul>
+                                <img src="https://via.placeholder.com/400x200?text=Aperçu+Projet+1" alt="Screenshot Projet 1">
+                            </div>
+                            <hr>
+                            <div class="project-item">
+                                <h5>Projet 2 : Portfolio Web</h5>
+                                <p>Création d'un site statique responsive avec Jekyll.</p>
+                                <ul>
+                                    <li><strong>Tech:</strong> HTML, CSS, JavaScript</li>
+                                    <li><strong>Lien:</strong> <a href="#">Live Demo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wrapper">
+        <p>&copy; 2026 Nino PERDRIX</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
