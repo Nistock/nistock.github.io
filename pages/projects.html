@@ -13,9 +13,13 @@
             gap: 30px;
             margin-bottom: 50px;
         }
+
         @media (max-width: 768px) {
-            .project-detail-grid { grid-template-columns: 1fr; }
+            .project-detail-grid {
+                grid-template-columns: 1fr;
+            }
         }
+
         .tech-tag {
             display: inline-block;
             background: #e8e8e8;
@@ -27,77 +31,82 @@
     </style>
 </head>
 <body>
-    <header class="topbar">
-        <div class="wrapper">
-            <a href="../index.html" class="logo">
-                <img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" alt="Swagger Logo">
-                <span>PORTFOLIO API</span>
-            </a>
-        </div>
-    </header>
+<header class="topbar">
+    <div class="wrapper">
+        <a href="../index.html" class="logo">
+            <img src="https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg" alt="Swagger Logo">
+            <span>PORTFOLIO API</span>
+        </a>
+    </div>
+</header>
 
-    <main class="wrapper">
-        <div class="info-header">
-            <h1 class="title">GET <span class="opblock-summary-path" style="font-size: 2.5rem;">/projects</span></h1>
-            <p class="description">Liste exhaustive et détaillée des projets réalisés.</p>
-            <a href="../index.html" style="color: var(--swagger-blue); text-decoration: none;">&larr; Retour à l'index</a>
-        </div>
+<main class="wrapper">
+    <div class="info-header">
+        <h1 class="title">GET <span class="opblock-summary-path" style="font-size: 2.5rem;">/projects</span></h1>
+        <p class="description">Liste exhaustive et détaillée des projets réalisés.</p>
+        <a href="../index.html" style="color: var(--swagger-blue); text-decoration: none;">&larr; Retour à l'index</a>
+    </div>
 
-        <section class="responses-wrapper">
-            <div class="response-header">Catalogue des Projets</div>
-            <div class="response-content" style="font-family: sans-serif;">
-                
-                <div class="project-detail-grid">
-                    <div>
-                        <img src="https://via.placeholder.com/600x300?text=Projet+1+Full+View" alt="Aperçu Projet 1" style="width:100%; border-radius:4px; border: 1px solid #ddd;">
-                    </div>
-                    <div>
-                        <h2>Projet 1 : Gestion de données météorologiques et photovoltaïques</h2>
-                        <p>L’objectif était de récupérer les données d’une station météorologique et de deux
-                            onduleurs reliés à des panneaux photovoltaïques. Afin de mener à bien ce projet,
-                            nous avons utilisé des scripts python pour la récupération des données, un site
-                            web en CakePHP pour mettre à disposition ces données aux utilisateur·ice·s et du
-                            bash afin de déployer automatiquement notre projet sur un Raspberry PI vierge.
-                            A partir de ces données, nous avons utilisé un modèle de deep-learning afin de
-                            tenter d’établir des prévisions météorologiques.</p>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Bash</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">CakePHP</span>
-                            <span class="tech-tag">Linux</span>
-                        <div style="margin-top: 20px;">
-                            <a href="https://iutbg-gitlab.iutbourg.univ-lyon1.fr/sae-but2/2024-25/pilotage-donnees-station-meteo" target="_blank" class="btn-execute" style="background-color: #333; margin-right: 10px;">Project (VPN IUT)</a>
-                        </div>
+    <section class="responses-wrapper">
+        <div class="response-header">Catalogue des Projets</div>
+        <div class="response-content" style="font-family: sans-serif;">
+
+            <div class="project-detail-grid">
+                <div>
+                    <img src="https://via.placeholder.com/600x300?text=Projet+1+Full+View" alt="Aperçu Projet 1"
+                         style="width:100%; border-radius:4px; border: 1px solid #ddd;">
+                </div>
+                <div>
+                    <h2>Projet 1 : Gestion de données météorologiques et photovoltaïques</h2>
+                    <p>L’objectif était de récupérer les données d’une station météorologique et de deux onduleurs
+                        reliés à des panneaux photovoltaïques. Afin de mener à bien ce projet, nous avons utilisé des
+                        scripts python pour la récupération des données, un site web en CakePHP pour mettre à
+                        disposition ces données aux utilisateur·ice·s et du bash afin de déployer automatiquement notre
+                        projet sur un Raspberry PI vierge. A partir de ces données, nous avons utilisé un modèle de
+                        deep-learning afin de tenter d’établir des prévisions météorologiques.</p>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Bash</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">CakePHP</span>
+                    <span class="tech-tag">Linux</span>
+                    <div style="margin-top: 20px;">
+                        <a href="https://iutbg-gitlab.iutbourg.univ-lyon1.fr/sae-but2/2024-25/pilotage-donnees-station-meteo"
+                           target="_blank" class="btn-execute" style="background-color: #333; margin-right: 10px;">Project
+                            (VPN IUT)</a>
                     </div>
                 </div>
-
-                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
-
-                <div class="project-detail-grid">
-                    <div>
-                        <img src="https://via.placeholder.com/600x300?text=Projet+2+Full+View" alt="Aperçu Projet 2" style="width:100%; border-radius:4px; border: 1px solid #ddd;">
-                    </div>
-                    <div>
-                        <h2>Projet 2 : Site de gestion de tournoi Volley Ball</h2>
-                        <p>Création de ce site de portfolio en explorant différents styles (Swagger et Grimoire) pour mettre en valeur mes compétences.</p>
-                        <p><strong>Défis techniques :</strong> Travail approfondi sur le CSS pour imiter des interfaces existantes et assurer une compatibilité mobile parfaite.</p>
-                        <p>
-                            <span class="tech-tag">Java Spring Boot</span>
-                            <span class="tech-tag">VueJS</span>
-                            <span class="tech-tag">Docker</span>
-                        </p>
-<!--                        <div style="margin-top: 20px;">-->
-<!--                            <a href="#" class="btn-execute" style="background-color: var(&#45;&#45;swagger-green);">DEMO LIVE</a>-->
-<!--                        </div>-->
-                    </div>
-                </div>
-
             </div>
-        </section>
-    </main>
 
-    <footer class="wrapper">
-        <p>&copy; 2026 [Nino PERDRIX]. Généré par Portfolio API.</p>
-    </footer>
+            <hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+            <div class="project-detail-grid">
+                <div>
+                    <h2>Projet 2 : Serveur personnel</h2>
+                    <p>Création d'un serveur personnel afin d'héberger différents services de streaming, de stockage et
+                        d'utilitaires</p>
+                    <p><strong>Défis techniques :</strong>Sécurisation des services afin de les exposer sur internet en
+                        utilisant des middlewares de sécurité.</p>
+                    <p>
+                        <span class="tech-tag">Ubuntu Server</span>
+                        <span class="tech-tag">Réseau</span>
+                        <span class="tech-tag">Wireguard</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Traefik</span>
+                        <span class="tech-tag">Crowdsec</span>
+                        <span class="tech-tag">Anubis</span>
+                    </p>
+                    <!--                        <div style="margin-top: 20px;">-->
+                    <!--                            <a href="#" class="btn-execute" style="background-color: var(&#45;&#45;swagger-green);">DEMO LIVE</a>-->
+                    <!--                        </div>-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer class="wrapper">
+    <p>&copy; 2026 [Nino PERDRIX]. Généré par Portfolio API.</p>
+</footer>
 </body>
 </html>
