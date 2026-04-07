@@ -20,9 +20,9 @@
     <div class="info-section wrapper">
         <div class="info-header">
             <h1 class="title">Portfolio de Nino PERDRIX <span class="version">1.0.0</span></h1>
-            <pre class="base-url">[ Base URL: github.io/[votre-username]/portfolio ]</pre>
+            <pre class="base-url">[ Base URL: nistock.github.io</pre>
             <div class="description">
-                <p>Ceci est l'API de mon parcours professionnel et de mes compétences. Explorez les différentes "routes" pour en savoir plus sur moi.</p>
+                <p>Ceci est l'API de mon parcours professionnel et de mes compétences. Exécutez les différentes routes pour en savoir plus sur moi.</p>
             </div>
         </div>
     </div>
@@ -46,10 +46,9 @@
                         <div class="response-header">Response Body</div>
                         <pre class="response-content">
 {
-  "name": "[Votre Nom]",
-  "bio": "Étudiant passionné par [Domaine], actuellement en BUT Informatique.",
-  "location": "Ville, France",
-  "interests": ["Développement Web", "IA", "Design"]
+  "name": "Nino PERDRIX",
+  "bio": "Étudiant passionné par le développement, la sécurité et le devops, actuellement en BUT Informatique.",
+  "interests": ["Informatique", "Tennis de Table", "Associatif", "Randonnées"]
 }
                         </pre>
                     </div>
@@ -73,8 +72,8 @@
                             <p>Accéder au fichier complet : <a href="assets/mon_cv.pdf" target="_blank">curriculum_vitae.pdf</a></p>
                             <h4>Expériences clés :</h4>
                             <ul>
-                                <li><strong>Stage [Entreprise]</strong> : Développement de [Projet] (2025)</li>
-                                <li><strong>BUT Informatique</strong> : IUT de [Ville] (En cours)</li>
+                                <li><strong>Stage [CERN] (2025)</strong> : Améliorations d'une application web de contrôle d'accès basé sur les rôles</li>
+                                <li><strong>Alternance [Ciril Group]</strong> : Maintenance et améliorations du socle logiciel Civil (En cours)</li>
                             </ul>
                         </div>
                     </div>
@@ -100,9 +99,8 @@
                         <div class="response-header">Response Body</div>
                         <pre class="response-content">
 [
-  { "category": "Frontend", "items": ["HTML/CSS", "JavaScript", "Vue.js"] },
-  { "category": "Backend", "items": ["Java", "Python", "SQL"] },
-  { "category": "Tools", "items": ["Git", "Docker", "VS Code"] }
+  { "category": "Backend", "items": ["Java", "C", "Php", "SQL"] },
+  { "category": "Tools", "items": ["Git", "Docker", "Linux"] }
 ]
                         </pre>
                     </div>
@@ -126,26 +124,24 @@
                     </div>
                     <div class="responses-wrapper">
                         <div class="response-header">Response Body</div>
-                        <div class="response-content">
-                            <div class="project-item">
-                                <h5>Projet 1 : Gestionnaire de Stock</h5>
-                                <p>Application JavaFX pour gérer l'inventaire d'une petite boutique.</p>
-                                <ul>
-                                    <li><strong>Tech:</strong> Java, SQLite</li>
-                                    <li><strong>Lien:</strong> <a href="https://github.com/votre-username/projet1">GitHub Repo</a></li>
-                                </ul>
-                                <img src="https://via.placeholder.com/400x200?text=Aperçu+Projet+1" alt="Screenshot Projet 1">
-                            </div>
-                            <hr>
-                            <div class="project-item">
-                                <h5>Projet 2 : Portfolio Web</h5>
-                                <p>Création d'un site statique responsive avec Jekyll.</p>
-                                <ul>
-                                    <li><strong>Tech:</strong> HTML, CSS, JavaScript</li>
-                                    <li><strong>Lien:</strong> <a href="#">Live Demo</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <pre class="responses-content">
+[
+  {
+    "title": "Gestion données météorologiques et photovoltaïques",
+    "technologies": ["CakePHP", "Python", "SQlite", "Bash"]
+  },
+  {
+    "title": "Site de gestion de tournoi Volley Ball",
+    "technologies": ["Spring Boot", "VueJS", "Docker", "Mariadb"]
+  },
+  {
+    "title": "Serveur personnel"
+    "technologies": ["Linux", "Docker", "Crowdsec"]
+    "servicesDocker": [""]
+  },
+]
+                        </pre>
+
                     </div>
                 </div>
             </div>
